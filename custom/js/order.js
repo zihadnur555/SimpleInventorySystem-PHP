@@ -437,7 +437,7 @@ function addRow() {
 				'</td>'+
 				'<td style="padding-left:20px;">'+
 					'<div class="form-group">'+
-					'<input type="number" name="quantity[]" id="quantity'+count+'" onkeyup="getTotal('+count+')" autocomplete="off" class="form-control" min="1" />'+
+					'<input type="number" name="quantity[]" id="quantity'+count+'"  onkeyup="getTotal('+count+')" autocomplete="off" class="form-control" min="1" readonly/>'+
 					'</div>'+
 				'</td>'+
 				'<td style="padding-left:20px;">'+

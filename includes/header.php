@@ -152,11 +152,11 @@
         <li id="navReport"><a href="report.php"> <i class="glyphicon glyphicon-check"></i> Report </a></li>
 		<?php } ?>
   </li>
-  <li>
+  <!-- <li>
   <?php  if(isset($_SESSION['userId']) && $_SESSION['userId']==1) { ?>
         <li id="importbrand"><a href="importbrand.php"> <i class="glyphicon glyphicon-check"></i> Import Brand </a></li>
 		<?php } ?> 
-  </li>
+  </li> -->
 
   
 
