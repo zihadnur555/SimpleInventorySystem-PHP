@@ -96,7 +96,7 @@ if($_GET['o'] == 'add') {
 			  			<th style="width:40%;">Product</th>
 			  			<th style="width:20%;">Rate</th>
 			  			<th style="width:10%;">Available Quantity</th>
-			  			<th style="width:15%;">Quantity <br></th>			  			
+			  			<th style="width:15%;">Quantity <br><small>(Enter to update amt)</small></th>			  			
 			  			<th style="width:25%;">Total</th>			  			
 			  			<th style="width:10%;"></th>
 			  		</tr>
@@ -242,7 +242,7 @@ if($_GET['o'] == 'add') {
 
 			  <div class="form-group submitButtonFooter">
 			    <div class="col-sm-offset-2 col-sm-10">
-			    <!-- <button type="button" class="btn btn-success" onclick="addRow()" id="addRowBtn" data-loading-text="Loading..."> <i class="glyphicon glyphicon-plus-sign"></i> Add Row </button> -->
+			    <button type="button" class="btn btn-success" onclick="addRow()" id="addRowBtn" data-loading-text="Loading..."> <i class="glyphicon glyphicon-plus-sign"></i> Add Row </button>
 
 			      <button type="submit" id="createOrderBtn" data-loading-text="Loading..." class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i> Save Changes</button>
 
@@ -516,7 +516,7 @@ if($_GET['o'] == 'add') {
 
 			  <div class="form-group editButtonFooter">
 			    <div class="col-sm-offset-2 col-sm-10">
-			    <!-- <button type="button" class="btn btn-success" onclick="addRow()" id="addRowBtn" data-loading-text="Loading..."> <i class="glyphicon glyphicon-plus-sign"></i> Add Row </button> -->
+			    <button type="button" class="btn btn-success" onclick="addRow()" id="addRowBtn" data-loading-text="Loading..."> <i class="glyphicon glyphicon-plus-sign"></i> Add Row </button>
 
 			    <input type="hidden" name="orderId" id="orderId" value="<?php echo $_GET['i']; ?>" />
 
