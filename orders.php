@@ -132,8 +132,26 @@ if($_GET['o'] == 'add') {
 									<p id="available_quantity<?php echo $x; ?>"></p>
 			  					</div>
 			  				</td>
+
+
+
+
 			  				<td style="padding-left:20px;">
 			  					<div class="form-group">
+								  
+									<!-- Order Count -->
+									
+									<!-- <?php
+			  							$productSql = "SELECT * FROM product WHERE active = 1 AND status = 1 AND quantity > 0";
+			  							$productData = $connect->query($productSql);
+
+			  							while($row = $productData->fetch_array()) {	?>
+
+											<input type="number" name="quantity[]" id="quantity<?php echo $x; ?>" value="1" autocomplete="off" class="form-control" min="1" max="<?php echo $row['quantity'] ?>"/>
+										 	
+											<?php } ?> -->
+
+			  						
 			  					<input type="number" name="quantity[]" id="quantity<?php echo $x; ?>" value="1" autocomplete="off" class="form-control" min="1" max="1" readonly/>
 			  					</div>
 			  				</td>
@@ -521,8 +539,9 @@ if($_GET['o'] == 'add') {
 			    <input type="hidden" name="orderId" id="orderId" value="<?php echo $_GET['i']; ?>" />
 
 			    <button type="submit" id="editOrderBtn" data-loading-text="Loading..." class="btn btn-success"><i class="glyphicon glyphicon-ok-sign"></i> Save Changes</button>
-			      
-			    </div>
+				<button type="reset" class="btn btn-danger" onclick="resetOrderForm()"><i class="glyphicon glyphicon-erase"></i> Reset</button>
+			    
+			</div>
 			  </div>
 			</form>
 
